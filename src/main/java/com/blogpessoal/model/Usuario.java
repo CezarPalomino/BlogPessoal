@@ -14,6 +14,8 @@ import javax.validation.constraints.NotNull;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
+import io.swagger.v3.oas.annotations.media.Schema;
+
 @Entity
 @Table(name = "tb_usuario")
 public class Usuario {
@@ -25,9 +27,11 @@ public class Usuario {
 	@NotNull(message = "O atributo nome é obrigatório!")
 	private String nome;
 
-	@NotNull
+	@Schema(example = "email@email.com.br")
+	@NotNull(message = "O atributo Usuário é Obrigatório!")
 	@Email(message = "O atributo Usuário deve ser um email válido!")
 	private String usuario;
+
 
 	@NotNull(message = "O atributo senha é obrigatório!")
 	private String senha;
