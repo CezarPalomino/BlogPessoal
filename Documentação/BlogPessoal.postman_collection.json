@@ -1,0 +1,69 @@
+{
+	"info": {
+		"_postman_id": "86572222-4f0d-409c-80f4-9df0affe1203",
+		"name": "BlogPessoal",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Cadastro",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nome\": \"Antonio\",\r\n  \"foto\": \"fotodoantonio\",\r\n  \"usuario\": \"emaildoantonio@email.com.br\",\r\n  \"senha\": \"senhadoantonio\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://bl0gp3ssoal.herokuapp.com/usuarios/cadastrar",
+					"protocol": "https",
+					"host": [
+						"bl0gp3ssoal",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"usuarios",
+						"cadastrar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nome\": \"Antonio\",\r\n  \"foto\": \"fotodoantonio\",\r\n  \"usuario\": \"emaildoantonio@email.com.br\",\r\n  \"senha\": \"senhadoantonio\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://bl0gp3ssoal.herokuapp.com/usuarios/logar",
+					"protocol": "https",
+					"host": [
+						"bl0gp3ssoal",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"usuarios",
+						"logar"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
