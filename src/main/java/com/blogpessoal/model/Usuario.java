@@ -26,6 +26,8 @@ public class Usuario {
 
 	@NotNull(message = "O atributo nome é obrigatório!")
 	private String nome;
+	
+	private String foto;
 
 	@Schema(example = "email@email.com.br")
 	@NotNull(message = "O atributo Usuário é Obrigatório!")
@@ -40,10 +42,11 @@ public class Usuario {
 	@JsonIgnoreProperties("usuario")
 	private List<Postagem> postagem;
 	
-public Usuario(long id, String nome, String usuario, String senha) {
+public Usuario(long id, String nome, String usuario, String senha, String foto) {
 		
 		this.id = id;
 		this.nome = nome;
+		this.foto = foto;
 		this.usuario = usuario;
 		this.senha = senha;
 		
@@ -94,6 +97,14 @@ public Usuario(long id, String nome, String usuario, String senha) {
 
 	public void setPostagem(List<Postagem> postagem) {
 		this.postagem = postagem;
+	}
+
+	public String getFoto() {
+		return foto;
+	}
+
+	public void setFoto(String foto) {
+		this.foto = foto;
 	}
 
 }
